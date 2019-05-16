@@ -16,9 +16,19 @@ https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
 Better just to always start a repo on the website and then clone to the comp
 However if the stuff already exists, create on line then:
 > open GitBash
+
 > navigate to the directory you wish to link to the repo
+
+> git init
+
 > git remote add origin https://github.com/<username>/<repository>.git
+
 > git push -u origin master
+
+
+When starting out a new repo, must make the first commit as a detached commit
+Once this has been created you can then push that to the repo
+This will create the first branch - before that there isn't anything
 
 
 
