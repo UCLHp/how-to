@@ -13,13 +13,12 @@ git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<
 https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
 
 
-Seems like if you create a repo in Atom, you still need to initialise externally
-> Open github.com and create the appropriately named repository
-> Open GitBash
-> navigate to the directory of the repository
-> run the command
-> git remote add origin git@github.com:<username>/<repositor>.git
-
+Better just to always start a repo on the website and then clone to the comp
+However if the stuff already exists, create on line then:
+> open GitBash
+> navigate to the directory you wish to link to the repo
+> git remote add origin https://github.com/<username>/<repository>.git
+> git push -u origin master
 
 
 
