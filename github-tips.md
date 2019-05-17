@@ -1,5 +1,20 @@
 # how-to
 
+## 2019-06-17
+
+Creating a repository locally then uploading to GitHub
+
+ - create a folder with appropriate name
+ - open GitBash and navigate into this folder
+ - > git init
+ - > create some kind of file or something so it contains something
+ - > git add <filename>
+ - > git commit -m '<commit message>'
+ - then need to connect it to a remote repository, you have to create the repo either with the desktop app or straight on the website, there's no way to do it from the command line sadly
+ - > git remote add origin <https://github.com/agosling/<repo name>
+ - > git push origin master
+
+
 
 ## 2019-05-16
 Guide to get Git working with Atom (from Callum)
