@@ -1,22 +1,38 @@
 # how-to
 
-## 2019-06-17
+## Creating a repository locally then uploading to GitHub
+### 2019-05-17
 
 Creating a repository locally then uploading to GitHub
 
  - create a folder with appropriate name
  - open GitBash and navigate into this folder
- - > git init
- - > create some kind of file or something so it contains something
- - > git add <filename>
- - > git commit -m '<commit message>'
+
+ > git init
+
+ - create some kind of file or something so it contains something
+
+ > git add <filename>
+
+ > git commit -m '<commit message>'
+
  - then need to connect it to a remote repository, you have to create the repo either with the desktop app or straight on the website, there's no way to do it from the command line sadly
- - > git remote add origin <https://github.com/agosling/<repo name>
- - > git push origin master
+
+ > git remote add origin <https://github.com/agosling/<repo name>
+
+ > git push origin master
+
+
+## Restructuring directories and merging repositories
+### 2019-05-28
+
+Done mostly in GitBash as needs the full set of commands.
 
 
 
-## 2019-05-16
+## First steps into Git use and integration with Atom
+###2019-05-16
+
 Guide to get Git working with Atom (from Callum)
 https://www.hongkiat.com/blog/manage-git-github-atom/
 
@@ -26,19 +42,6 @@ https://flight-manual.atom.io/using-atom/sections/github-package/
 If there are issues with the proxy, open Git Bash and type:
 git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<port>
 https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
-
-
-Better just to always start a repo on the website and then clone to the comp
-However if the stuff already exists, create on line then:
-> open GitBash
-
-> navigate to the directory you wish to link to the repo
-
-> git init
-
-> git remote add origin https://github.com/<username>/<repository>.git
-
-> git push -u origin master
 
 
 When starting out a new repo, must make the first commit as a detached commit
