@@ -12,13 +12,13 @@ Creating a repository locally then uploading to GitHub
 
  - create some kind of file or something so it contains something
 
- > git add <filename>
+ > git add <filename\>
 
- > git commit -m '<commit message>'
+ > git commit -m ' <commit message\> '
 
  - then need to connect it to a remote repository, you have to create the repo either with the desktop app or straight on the website, there's no way to do it from the command line sadly
 
- > git remote add origin <https://github.com/agosling/<repo name>
+ > git remote add origin <https://github.com/agosling/<repo name\>
 
  > git push origin master
 
@@ -28,6 +28,21 @@ Creating a repository locally then uploading to GitHub
 
 Done mostly in GitBash as needs the full set of commands.
 
+
+
+## Stopping tracking of filetypes
+### 2019-05-30
+source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
+
+Navigate to the directory of the repo
+
+Add the file type to the `.gitignore` file
+
+Run the following command to remove existing tracking of that filetype
+
+> git rm --cached <filetype\>
+
+Make a commit to log the change
 
 
 ## First steps into Git use and integration with Atom
