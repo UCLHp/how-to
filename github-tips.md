@@ -1,52 +1,6 @@
-# how-to
+# How-To GitHub guide - all my own learning
 
-## Creating a repository locally then uploading to GitHub
-### 2019-05-17
-
-Creating a repository locally then uploading to GitHub
-
- - create a folder with appropriate name
- - open GitBash and navigate into this folder
-
- > git init
-
- - create some kind of file or something so it contains something
-
- > git add <filename\>
-
- > git commit -m ' <commit message\> '
-
- - then need to connect it to a remote repository, you have to create the repo either with the desktop app or straight on the website, there's no way to do it from the command line sadly
-
- > git remote add origin <https://github.com/agosling/<repo name\>
-
- > git push origin master
-
-
-## Restructuring directories and merging repositories
-### 2019-05-28
-
-Done mostly in GitBash as needs the full set of commands.
-
-
-
-## Stopping tracking of filetypes
-### 2019-05-30
-source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
-
-Navigate to the directory of the repo
-
-Add the file type to the `.gitignore` file
-
-Run the following command to remove existing tracking of that filetype
-
-> git rm --cached <filetype\>
-
-Make a commit to log the change
-
-
-## First steps into Git use and integration with Atom
-###2019-05-16
+### First steps into Git use and integration with Atom
 
 Guide to get Git working with Atom (from Callum)
 https://www.hongkiat.com/blog/manage-git-github-atom/
@@ -65,7 +19,56 @@ This will create the first branch - before that there isn't anything
 
 
 
-## pre 2019-05-16
+### Creating a repository locally then uploading to GitHub
+
+Creating a repository locally then uploading to GitHub
+
+ - create a folder with appropriate name
+
+ - open GitBash and navigate into this folder
+
+> git init
+
+ - create some kind of file or something so it contains something
+
+> git add [filename]
+
+> git commit -m ' [commit message] '
+
+ - then need to connect it to a remote repository, you have to create the repo either with the desktop app or straight on the website, there's no way to do it from the command line sadly
+
+> git remote add origin https://github.com/agosling/[repo-name]
+
+> git push origin master
+
+
+### Stopping tracking of filetypes
+
+source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
+
+ - Navigate to the directory of the repo
+
+ - Create a `.gitignore` file if not already present.  Add the file type to the `.gitignore` file in the format `*.tif` or similar (`*` is a wildcard to indicate any filename).
+
+ - In GitBash run the following command to remove existing tracking of that filetype (do not include the [ ] around the filetype/filenames)
+
+> git rm --cached [filetype/filename]
+
+ - Make a commit to log the change
+
+
+
+
+
+### Restructuring directories and merging repositories
+
+Done mostly in GitBash as needs the full set of commands.
+
+Did it but need to recover the sources and summarise my steps.
+
+
+
+# pre 2019-05-16
 
 Some potentially useful tutorials I found online:
 
