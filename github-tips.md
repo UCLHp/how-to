@@ -17,6 +17,7 @@ When starting out a new repo, must make the first commit as a detached commit
 Once this has been created you can then push that to the repo
 This will create the first branch - before that there isn't anything
 
+.
 
 
 ### Creating a repository locally then uploading to GitHub
@@ -41,6 +42,7 @@ Creating a repository locally then uploading to GitHub
 
 > git push origin master
 
+.
 
 ### Stopping tracking of filetypes
 
@@ -56,9 +58,7 @@ source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?vi
 
  - Make a commit to log the change
 
-
-
-
+.
 
 ### Restructuring directories and merging repositories
 
@@ -66,7 +66,7 @@ Done mostly in GitBash as needs the full set of commands.
 
 Did it but need to recover the sources and summarise my steps.
 
-
+.
 
 # pre 2019-05-16
 
