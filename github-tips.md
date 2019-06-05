@@ -5,17 +5,16 @@
 Guide to get Git working with Atom (from Callum)
 https://www.hongkiat.com/blog/manage-git-github-atom/
 
-The master guide - needs additional help thoug
+The master guide - needs additional help though
 https://flight-manual.atom.io/using-atom/sections/github-package/
 
 If there are issues with the proxy, open Git Bash and type:
 git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<port>
 https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
 
+.
 
-When starting out a new repo, must make the first commit as a detached commit
-Once this has been created you can then push that to the repo
-This will create the first branch - before that there isn't anything
+If there is something that you'd like to see in this how-to, then raise and issue against the repository(use the `Issue` button above to submit a request.)
 
 .
 
