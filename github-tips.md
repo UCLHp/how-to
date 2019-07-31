@@ -48,6 +48,16 @@ source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?vi
 
  - Make a commit to log the change
 
+ ### Setting git username and password globally so that Atom recognises it:
+
+ source:  https://github.com/atom/github/issues/932
+
+set it in terminal/powershell/cmd:
+
+> git config --global user.email "you@example.com"
+> git config --global user.name "Your Name"
+
+
 ### Restructuring directories and merging repositories
 
 Done mostly in GitBash as needs the full set of commands.
