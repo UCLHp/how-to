@@ -36,6 +36,30 @@ Creating a repository locally then uploading to GitHub
 > git remote add origin https://github.com/agosling/[repo-name]  
 > git push origin master
 
+
+### Renaming a branch and updating locally and remotely
+
+ - source:  https://www.w3docs.com/snippets/git/how-to-rename-git-local-and-remote-branches.html
+
+Rename your local branch.
+ - If you are on the branch you want to rename:
+
+> git branch -m new-name
+
+ - Or if you are on a different branch:
+
+> git branch -m old-name new-name
+
+Delete the old-name remote branch and push the new-name local branch.
+> git push origin :old-name new-name
+
+Reset the upstream branch for the new-name local branch.
+Switch to the branch and then:
+
+> git push origin -u new-name
+
+
+
 ### Stopping tracking of filetypes
 
 source:  https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
