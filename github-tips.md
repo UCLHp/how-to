@@ -82,6 +82,20 @@ set it in terminal/powershell/cmd:
 > git config --global user.name "Your Name"
 
 
+
+### Removing a branch
+
+source:  https://koukia.ca/delete-a-local-and-a-remote-git-branch-61df0b10d323
+
+remove a branch locally:
+
+> git branch -d [branch name]
+
+remove a remote branch:
+
+> git push [remote name] --delete [branch name]
+
+
 ## A few subtle markdown tips
 
  - If you want a single line break, place two spaces at the end of a line
