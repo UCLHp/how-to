@@ -95,6 +95,76 @@ remove a remote branch:
 
 > git push [remote name] --delete [branch name]
 
+## Some extra commands shamelessly stolen from an "sdc" presentation
+### Source and credit is Haroon Chughtai:  2019-03-01
+
+##### Set Up Your Details
+> git config --global user.name "Haroon Chughtai"  
+> git config --global user.email "h.chughtai@nhs.net"
+
+##### Configure Line Endings
+> git config --global core.autocrlf input # macOS & Linux  
+> git config --global core.autocrlf true # Windows
+
+##### Choose an Editor
+> git config --global core.editor "nano -w"
+
+##### Set Up Proxy
+> git config --global http.proxy proxy-url  
+> git config --global https.proxy proxy-url  
+
+N.B. The UCLH proxy address is http://[uclh_username]:[uclh_pwd]@www-cache-n:3128
+
+##### Tracking Changes
+> git add [filename]  
+> git commit -m "Reason for change"
+
+##### Exploring History
+Compare with previous versions of a file
+> git diff HEAD [filename] # the last commit  
+> git diff HEAD~1 [filename] # the commit 1 behind the last commit  
+> git diff [commit_id] [filename] # a specific commit  
+
+Restore a previous version of a file to the working directory
+> git checkout HEAD [filename]  
+
+Detaches head and should be used as a read-only view
+> git checkout [commit_id]  
+
+Reattaches head and puts repo back into a safe state
+> git checkout master  
+
+##### Remotes
+> git remote add origin [remote repository address]  
+> git push origin master
+
+##### Collaborating
+get someone’s repo
+> git clone [someone's repo] [your local file path]
+
+to get changes
+> git pull origin master
+
+to make changes
+> git add [file]
+> git commit -m "meaningful comment"
+> git push origin master
+
+> git pull = git fetch + git merge
+
+##### Resource List
+What this talk was based on:  http://swcarpentry.github.io/git-novice/  
+Some notes that I like:  https://www.atlassian.com/git/tutorials  
+An amazing reference:  https://github.com/k88hudson/git-flight-rules  
+An interactive git tutorial app:  https://github.com/jlord/git-it-electron  
+An interactive git branching tutorial:  https://learngitbranching.js.org/  
+Lots of posts by devs at different career stages:  https://dev.to/search?q=Git
+
+
+
+
+
+
 
 ## A few subtle markdown tips
 
