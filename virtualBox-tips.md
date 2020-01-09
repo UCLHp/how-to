@@ -14,7 +14,7 @@ return will be something like:
 Reply from 9.18.7.10: bytes=32 time=1ms TTL=61  
 Reply from 9.18.7.10: bytes=32 time<1ms TTL=61  
 
-The IP address 9.18.7.10 (or whatever your computer returns is the address of the proxy).  VirtualBox can’t seem to resolve the translation from www-cache-n to this address which seems to be why all the tips online don’t work.  
+The IP address 9.18.7.10/11 (or whatever your computer returns is the address of the proxy).  VirtualBox can’t seem to resolve the translation from www-cache-n to this address which seems to be why all the tips online don’t work.  
 Using this ip address rather than www-cache-n is what ended up working for me.
 
 Based on various internet search, you need to make the following changes to files (I’ve made them all, you may be able to get away with fewer).  Replace:
