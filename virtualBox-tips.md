@@ -1,6 +1,8 @@
 # VirtualBox tips - things I've had to solve
 
-### Getting network access
+## Getting network access
+
+#### On windows
 
 1st in windows, cmd.exe
 
@@ -26,7 +28,7 @@ in the listed additions with your own medphysnt username and password version of
 
 
 
-### Files to change
+#### Files to change in Linux
 All changes need to be made as sudo  (for the vGate you are already an account with sudo access, the password is virtual).
 
 ###### /etc/apt/apt.conf.d/95proxies
