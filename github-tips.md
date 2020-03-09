@@ -78,7 +78,7 @@ source:  https://github.com/atom/github/issues/932
 
 set it in terminal/powershell/cmd:
 
-> git config --global user.email "you@example.com"  
+> git config --global user.email \"you@example.com\"  
 > git config --global user.name "Your Name"
 
 
