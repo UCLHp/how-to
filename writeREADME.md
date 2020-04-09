@@ -1,18 +1,34 @@
+Designed based on guide outlined on [makeareadme.com](https://www.makeareadme.com/) but with some personal additions.
+
+---
+
 # TITLE
 
 Brief description of the package/programme etc.
 
-# Usage
+*BADGES* - can add badges of metadata such as version info  ([shields.io](https://shields.io/) gives many good options).
 
-How to use the programme, how to call the package
+### Components
+
+If formed of multiple parts, outline file structure
+
+# Installation
+
+Steps to take to install
 
 ### Requirements
 
 Any specifics, dependencies, use of PipEnv/requirements files
 
-# Components
+### Tests
 
-If formed of multiple parts, outline file structure
+Included tests, how to use them, what results to expect
+
+# Usage
+
+How to use the programme, how to call the package
+
+Examples of what it can do
 
 # Limitations / Known Bugs
 
@@ -21,7 +37,9 @@ Anything you know doesn't work
 # Contribute
 
 Pull requests are welcome.  
-For major changes, please open an Issue ticket:  [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
+For major changes, please open a ticket first to discuss desired changes:  [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
+
+If making changes, please check all tests and add if required.
 
 # Licence
 
