@@ -8,7 +8,7 @@ Brief description of the package/programme etc.
 
 *BADGES* - can add badges of metadata such as version info  ([shields.io](https://shields.io/) gives many good options).
 
-### Components
+## Components
 
 If formed of multiple parts, outline file structure
 
@@ -16,11 +16,11 @@ If formed of multiple parts, outline file structure
 
 Steps to take to install
 
-### Requirements
+## Requirements
 
 Any specifics, dependencies, use of PipEnv/requirements files
 
-### Tests
+## Tests
 
 Included tests, how to use them, what results to expect
 
@@ -47,7 +47,7 @@ All code within this package distributed under [GNU GPL-3.0 (or higher)](https:/
 
 Full license text contained within the file LICENCE.
 
-###  (C) License for all programmes
+##  (C) License for all programmes
 
 ```
 ###  Copyright (C) 2020:  Andrew J. Gosling
