@@ -8,46 +8,46 @@ Brief description of the package/programme etc.
 
 *BADGES* - can add badges of metadata such as version info  ([shields.io](https://shields.io/) gives many good options).
 
-## Components
+### Components
 
 If formed of multiple parts, outline file structure
 
-# Installation
+## Installation
 
 Steps to take to install
 
-## Requirements
+### Requirements
 
 Any specifics, dependencies, use of PipEnv/requirements files
 
-## Tests
+### Tests
 
 Included tests, how to use them, what results to expect
 
-# Usage
+## Usage
 
 How to use the programme, how to call the package
 
 Examples of what it can do
 
-# Limitations / Known Bugs
+## Limitations / Known Bugs
 
 Anything you know doesn't work
 
-# Contribute
+## Contribute
 
 Pull requests are welcome.  
 For major changes, please open a ticket first to discuss desired changes:  [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
 
 If making changes, please check all tests and add if required.
 
-# Licence
+## Licence
 
 All code within this package distributed under [GNU GPL-3.0 (or higher)](https://opensource.org/licenses/GPL-3.0).
 
 Full license text contained within the file LICENCE.
 
-##  (C) License for all programmes
+###  (C) License for all programmes
 
 ```
 ###  Copyright (C) 2020:  Andrew J. Gosling
