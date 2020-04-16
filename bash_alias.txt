@@ -5,7 +5,7 @@
 #   The following must be present and uncommented in primary .bashrc (or equivalent file)
 
 # if [ -f ~/.bash_aliases ]; then
-# . ~/.bash_aliases
+#   . ~/.bash_aliases
 # fi
 
 
