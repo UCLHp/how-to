@@ -37,17 +37,17 @@ If you want to create an executable it is first advisable to include a checksum 
 
 The library required to then create the executable is pyinstaller which can be installed using the command line
 
-'''
+```
 pip install pyinstaller
-'''
+```
 
 You can then use the command line to navigate to the directory containing your code and run the installer:
 
-'''
+```
 C: # Or other drive if your code is stored elsewhere  (e.g. M:)
 cd C:\Users\username\mycode # replace with the directory of your .py file
 pyinstaller --onefile --console mycode.py # replace mycode.py with the filename of your script
-'''
+```
 
 onefile means that the executable will work as a single file without relying on other folders that will be created during the build.
 console means that any print statements in your code will still be displayed in a command window pop up. 
@@ -55,6 +55,29 @@ more comprehensive documentation can be found here: https://pyinstaller.readthed
 
 I recommend adding a line at the end of your code to prevent it from automatically closing when it finishes running
 
-'''
+```
 input('The code has finished running, please press enter to close window:')
-'''
+```
+
+## checking your code for pep8 compliance
+
+If you write code that abides by the rules set out by pep8 it makes it more readable and easier to work collaboratively
+You can find out more about the pep8 style here:
+
+But a quick way to check if your code is compliant with most of the rules is to run the library 'pycodestyle'
+You first need to install this library
+
+```
+pip install pystylecode
+```
+You can then use the command line to navigate to the directory containing your code and run the installer:
+
+```
+C: # Or other drive if your code is stored elsewhere  (e.g. M:)
+cd C:\Users\username\mycode # replace with the directory of your .py file
+pycodestyle mycode.py # replace mycode.py with the filename of your script
+```
+this will then return blank if your code is compliant or print line by line deviations from pep8 style.
+
+
+
