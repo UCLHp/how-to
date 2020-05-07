@@ -62,7 +62,7 @@ input('The code has finished running, please press enter to close window:')
 ## checking your code for pep8 compliance
 
 If you write code that abides by the rules set out by pep8 it makes it more readable and easier to work collaboratively
-You can find out more about the pep8 style here:
+You can find out more about the pep8 style here:  [realpython.com/python-pep8/](https://realpython.com/python-pep8/)
 
 But a quick way to check if your code is compliant with most of the rules is to run the library 'pycodestyle'
 You first need to install this library
