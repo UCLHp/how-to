@@ -64,11 +64,13 @@ input('The code has finished running, please press enter to close window:')
 If you write code that abides by the rules set out by pep8 it makes it more readable and easier to work collaboratively
 You can find out more about the pep8 style here:
 
+https://realpython.com/python-pep8/
+
 But a quick way to check if your code is compliant with most of the rules is to run the library 'pycodestyle'
 You first need to install this library
 
 ```
-pip install pystylecode
+pip install pycodestyle
 ```
 You can then use the command line to navigate to the directory containing your code and run the installer:
 
@@ -78,6 +80,3 @@ cd C:\Users\username\mycode # replace with the directory of your .py file
 pycodestyle mycode.py # replace mycode.py with the filename of your script
 ```
 this will then return blank if your code is compliant or print line by line deviations from pep8 style.
-
-
-
