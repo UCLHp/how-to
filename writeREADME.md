@@ -69,7 +69,14 @@ Full license text contained within the file LICENCE.
 
 
 
-  ###  <HERE IS A BRIEF EXPLANATION OF THE PROGRAMME>
+  # add python modules folder in OS sensitive fashion
+from os import path as osPath
+from sys import path as sysPath
+# print(osPath.split(sysPath[0])[0])
+sysPath.append(osPath.join(osPath.split(sysPath[0])[0],'packages'))
+
+
+###  <HERE IS A BRIEF EXPLANATION OF THE PROGRAMME>
 
   def programmeName(<input>):
       # blah blah blah #
