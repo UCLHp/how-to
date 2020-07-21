@@ -65,29 +65,4 @@ Full license text contained within the file LICENCE.
   #  You should have received a copy of the GNU General Public License
   #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
-
-
-
-  # add python modules folder in OS sensitive fashion
-from os import path as osPath
-from sys import path as sysPath
-# print(osPath.split(sysPath[0])[0])
-sysPath.append(osPath.join(osPath.split(sysPath[0])[0],'packages'))
-
-
-###  <HERE IS A BRIEF EXPLANATION OF THE PROGRAMME>
-
-  def programmeName(<input>):
-      # blah blah blah #
-
-
-
-
-
-  if __name__ == '__main__':
-      programmeName(<input>)
-      # <input> example:
-        # from os import getcwd
-        # programmeName(file=getcwd())
 ```
