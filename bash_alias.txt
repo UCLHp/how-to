@@ -2,7 +2,7 @@
 #   0. TO SOURCE .BASH_ALIASES
 #   -----------------------------
 
-#   The following must be present and uncommented in primary .bashrc 
+#   The following must be present and uncommented in primary .bashrc
 #   (or equivalent file)
 
 # if [ -f ~/.bash_aliases ]; then
@@ -15,12 +15,12 @@
 #   1. TERMINAL COMMANDS MORE USEFUL
 #   -----------------------------
 
-alias cp='cp -iv'                  #  Preferred 'cp' implementation
-alias mv='mv -iv'                  #  Preferred 'mv' implementation
-alias rm='rm -iv'                  #  Preferred 'rm' implementation
-alias mkdir='mkdir -pv'            #  Preferred 'mkdir' implementation
-alias l='ls -FGlAhptr'               #  Preferred 'ls' implementation
-alias sbash='source ~/.bashrc'     #  shortcut to update bash
+alias cp='cp -iv'                       #  Preferred 'cp' implementation
+alias mv='mv -iv'                       #  Preferred 'mv' implementation
+alias rm='rm -iv'                       #  Preferred 'rm' implementation
+alias mkdir='mkdir -pv'                 #  Preferred 'mkdir' implementation
+alias l='ls -FGlAhptr --color=auto'     #  Preferred 'ls' implementation
+alias sbash='source ~/.bashrc'          #  shortcut to update bash
 
 #   speedier GitHub refresh
 alias gitpull='cd ~/how-to; git pull --all; cd ~/monteCarlo; git pull --all; cd ~/packages; git pull --all; cd ~/pbt-code; git pull --all'

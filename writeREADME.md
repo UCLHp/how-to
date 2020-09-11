@@ -26,9 +26,16 @@ Included tests, how to use them, what results to expect
 
 ## Usage
 
-How to use the programme, how to call the package
+Point future python programmes to these files location.  Either add the location
+ of these files to your `$PATH` or use the following commands at the start of
+ each new python programme (this should be OS independent):
 
-Examples of what it can do
+``` python
+from sys import path as sysPath
+from os import path as osPath
+sysPath.append(osPath.join(osPath.expanduser('~'),'[PATH TO THESE PACKAGES]'))
+```
+
 
 ## Limitations / Known Bugs
 
