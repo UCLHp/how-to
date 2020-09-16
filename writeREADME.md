@@ -36,6 +36,26 @@ from os import path as osPath
 sysPath.append(osPath.join(osPath.expanduser('~'),'[PATH TO THESE PACKAGES]'))
 ```
 
+Within the folder for a particular package there should be an `__init__.py`
+file containing lines like the following:
+
+```python
+from <package folder>.<sub directory>...<package fileneame> import <function>
+```
+
+If there is one of these lines for each function in a file, they can then be
+called using the line
+
+```python
+from <package folder> import <function>
+```
+or
+```python
+import <package folder>
+
+foo = <package filename>.<function>
+```
+
 
 ## Limitations / Known Bugs
 
