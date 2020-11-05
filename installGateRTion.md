@@ -182,7 +182,9 @@ https://opengate.readthedocs.io/en/latest/compilation_instructions.html
 mkdir gate-build
 mkdir gate-install
 cd gate-build/
-cmake /MCpackages/gate/Gate-GateRTion/
+cmake \
+-DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
+/MCpackages/gate/Gate-GateRTion/
 ```
 
 if cmake successful
@@ -193,9 +195,3 @@ make test
 
 make install
 ```
-
-activate by sourcing the appropriate .sh file
-```console
-source /MCpackages/geant4/geant4.10.03.p03-install/bin/geant4.sh
-```
-also add into .bash_aliases for future useres
