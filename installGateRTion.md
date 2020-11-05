@@ -138,9 +138,9 @@ use the pre-compiled binary as compiling from source is troublesome
 
 ```console
 cd /MCpackages/
-wget -c https://root.cern/download/root_v6.08.06.Linux-ubuntu16-x86-gcc5.4.tar.gz
-tar -xzf root_v6.08.06.Linux-ubuntu16-x86-gcc5.4.tar.gz
-mv root_v6.08.06.Linux-ubuntu16-x86-gcc5.4.tar.gz root/
+wget -c https://root.cern/download/root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
+tar -xzf root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
+mv root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz root/
 ```
 
 activate by sourcing the appropriate .sh file
