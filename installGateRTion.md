@@ -183,6 +183,8 @@ mkdir gate-build
 mkdir gate-install
 cd gate-build/
 cmake \
+-BUILD_TESTING=ON \
+-GATE_DOWNLOAD_BENCMARKS_DATA=ON \
 -DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
 /MCpackages/gate/Gate-GateRTion/
 ```
@@ -195,3 +197,9 @@ make test
 
 make install
 ```
+
+finally add the location of the gate executable to the system path
+```console
+export PATH=$PATH:/MCpackages/gate/gate-install/bin/
+```
+also add into .bash_aliases for future useres
