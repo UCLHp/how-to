@@ -182,9 +182,11 @@ https://opengate.readthedocs.io/en/latest/compilation_instructions.html
 mkdir gate-build
 mkdir gate-install
 cd gate-build/
+```
+
+generate install files with cmake and following options
+```console
 cmake \
--BUILD_TESTING=ON \
--GATE_DOWNLOAD_BENCMARKS_DATA=ON \
 -DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
 /MCpackages/gate/Gate-GateRTion/
 ```
@@ -203,3 +205,19 @@ finally add the location of the gate executable to the system path
 export PATH=$PATH:/MCpackages/gate/gate-install/bin/
 ```
 also add into .bash_aliases for future useres
+
+
+
+
+
+###  Issues
+
+When preparing Gate can download testing data however this always seems to cause issues:
+generate install files with cmake and following options
+```console
+cmake \
+-BUILD_TESTING=ON \
+-DGATE_DOWNLOAD_BENCHMARKS_DATA=ON \
+-DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
+/MCpackages/gate/Gate-GateRTion/
+```
