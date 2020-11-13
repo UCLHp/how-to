@@ -7,11 +7,17 @@
 Guide to get Git working with Atom (from Callum)
 https://www.hongkiat.com/blog/manage-git-github-atom/
 
+  
+
 The master guide - needs additional help though
 https://flight-manual.atom.io/using-atom/sections/github-package/
 
+  
+
 If there are issues with the proxy, open Git Bash and type:
+```console
 git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<port>
+```
 https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
 
 
