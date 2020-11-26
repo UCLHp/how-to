@@ -1,4 +1,4 @@
-# VM setup
+~/rtion/# VM setup
 
 Installed XUbuntu v18.04 LTS
 
@@ -55,7 +55,7 @@ obtain geant4.10.03 with patch-03 from:<br>
 <https://geant4.web.cern.ch/support/download_archive>
 
 ```console
-cd /MCpackages/
+cd ~/rtion/
 mkdir geant4
 cd geant4/
 wget -c http://cern.ch/geant4-data/releases/geant4.10.03.p03.tar.gz
@@ -73,15 +73,15 @@ generate install files with cmake and following options
 
 ```console
 cmake \
--DCMAKE_INSTALL_PREFIX=/MCpackages/geant4/geant4.10.03.p03-install/ \
+-DCMAKE_INSTALL_PREFIX=~/rtion/geant4/geant4.10.03.p03-install/ \
 -DGEANT4_BUILD_MULTITHREADED=OFF \
 -DGEANT4_INSTALL_DATA=ON \
 -DCMAKE_INSTALL_DATADIR=cdata/ \
 -DGEANT4_USE_OPENGL_X11=ON \
 -DGEANT4_USE_QT=ON \
 -DGEANT4_USE_RAYTRACER_X11=ON \
--/MCpackages/geant4/geant4.10.03.p03-install/ \
-/MCpackages/geant4/geant4.10.03.p03/
+-~/rtion/geant4/geant4.10.03.p03-install/ \
+~/rtion/geant4/geant4.10.03.p03/
 ```
 
 if cmake successful
@@ -97,7 +97,7 @@ make install
 activate by sourcing the appropriate .sh file
 
 ```console
-source /MCpackages/geant4/geant4.10.03.p03-install/bin/geant4.sh
+source ~/rtion/geant4/geant4.10.03.p03-install/bin/geant4.sh
 ```
 
 also add into .bash_aliases for future useres
@@ -126,7 +126,7 @@ install required version of ROOT from:<br>
 use the pre-compiled binary as compiling from source is troublesome
 
 ```console
-cd /MCpackages/
+cd ~/rtion/
 wget -c https://root.cern/download/root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
 tar -xzf root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
 mv root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz root/
@@ -135,7 +135,7 @@ mv root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz root/
 activate by sourcing the appropriate .sh file
 
 ```console
-source /MCpackages/root/bin/thisroot.sh
+source ~/rtion/root/bin/thisroot.sh
 ```
 
 also add into .bash_aliases for future useres
@@ -154,7 +154,7 @@ additional dependencies identified during installation - produce error messages:
 > ```
 
 ```console
-cd /MCpackages/
+cd ~/rtion/
 mkdir gate
 cd gate/
 wget -c https://github.com/OpenGATE/Gate/archive/GateRTion.zip
@@ -174,8 +174,8 @@ generate install files with cmake and following options
 
 ```console
 cmake \
--DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
-/MCpackages/gate/Gate-GateRTion/
+-DCMAKE_INSTALL_PREFIX=~/rtion/gate/gate-install/ \
+~/rtion/gate/Gate-GateRTion/
 ```
 
 if cmake successful
@@ -191,7 +191,7 @@ make install
 finally add the location of the gate executable to the system path
 
 ```console
-export PATH=$PATH:/MCpackages/gate/gate-install/bin/
+export PATH=$PATH:~/rtion/gate/gate-install/bin/
 ```
 
 also add into .bash_aliases for future useres
@@ -204,8 +204,8 @@ When preparing Gate can download testing data however this always seems to cause
 cmake \
 -DBUILD_TESTING=ON \
 -DGATE_DOWNLOAD_BENCHMARKS_DATA=ON \
--DCMAKE_INSTALL_PREFIX=/MCpackages/gate/gate-install/ \
-/MCpackages/gate/Gate-GateRTion/
+-DCMAKE_INSTALL_PREFIX=~/rtion/gate/gate-install/ \
+~/rtion/gate/Gate-GateRTion/
 ```
 
 Also, below are listed the previous build options used on an older system
