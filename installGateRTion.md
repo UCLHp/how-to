@@ -5,7 +5,19 @@ Installed XUbuntu v18.04 LTS
 uname: gate<br>
 psswd: virtual
 
-VBox setup is frozen after initialisation - all updates turned off!!!
+Install VirtualBox guest packages to enable things like copy-paste
+
+> Start the Virtual Machine<br>
+> From the menus at the top of the virtual machine container window<br>
+> Select `Devices` -> `Install Guest Additions`<br>
+> This will mount the Guest Additions CD<br>
+> Open a terminal, navigate to the CD, then run<br>
+> `sudo ./autorun.sh`<br>
+> `sudo apt-get install virtualbox-guest-additions-iso`<br>
+
+Also remember to set things like clipboard to bidirectional in you VBox manager.
+
+**_VBox setup is frozen after initialisation - all updates turned off!!!_**
 
 Using instructions from<br>
 <https://github.com/OpenGATE/Gate/wiki/Gate-RTion-project>
@@ -224,4 +236,40 @@ sudo cmake \
 -DGATE_USE_STDC11=ON \
 -DGeant4_DIR=/usr/local/geant4/geant4.10.03.p03-install/lib/Geant4-10.3.3 \
 /usr/local/gate/gate_v8.0
+```
+
+# START HERE.txt
+
+Paste the following into a text file on the desktop of the device
+
+```
+Welcome to the GATE RT-ion virtual machine
+
+Created by Andrew Gosling on YYYY-MM-DD
+For details contact andrew.gosling@nhs.net
+
+This VM should meet the requirements of the GATE RT-ion project.
+Setup is according to the instructions found here:
+https://github.com/OpenGATE/Gate/wiki/Gate-RTion-project
+
+This VM is supplied under GNU GPL-3.0
+###   USE IS ENTIRELY AT YOUR OWN RISK   ###
+
+
+
+uname:  gate
+pword:  virtual
+
+
+
+The installation was performed in line with the documentation found here:
+https://github.com/UCLHp/how-to/blob/master/installGateRTion.md
+
+
+ - The keyboard is currently set for UK standard but can be changed in settings
+ - Ensure copy and paste are set to biderectional in your VM manager
+ - Networking is set to NAT which should work on most systems
+ - Processors and memory allocation should also be adjusted in your VM manager
+ - All automatic updates have been disabled where possible
+   - Take care when performing updates that they do not affect the underlying function of GATE
 ```
