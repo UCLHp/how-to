@@ -121,27 +121,26 @@ install required dependencies as listed at:<br>
 
 ```console
 sudo apt-get install git dpkg-dev cmake g++ gcc \
-binutils libx11-dev libxpm-dev libxext-dev
-```
-
-libxft-dev doesn't install straigh forwardly<br>
-requires specific version of libfreetype6
-
-```console
-sudo apt-get install libfreetype6=2.10.1-2
-sudo apt-get install libxft-dev
+binutils libx11-dev libxpm-dev libxext-dev libxft-dev
 ```
 
 install required version of ROOT from:<br>
 <https://root.cern/install/all_releases/><br>
 <https://root.cern/releases/release-60806/><br>
-use the pre-compiled binary as compiling from source is troublesome
+
+Building from source to ensure compatible gcc and other compilers.
 
 ```console
 cd ~/rtion/
-wget -c https://root.cern/download/root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
-tar -xzf root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz
-mv root_v6.08.06.Linux-ubuntu16-x86_64-gcc5.4.tar.gz root/
+mkdir root/
+cd root/
+wget -c https://root.cern/download/root_v6.08.06.source.tar.gz
+tar -xzf root_v6.08.06.source.tar.gz
+mv root_v6.08.06.source.tar.gz root-6.08.06/
+mkdir root-6.08.06-build/ root-6.08.06-install/
+cd root-6.08.06-build/
+cmake -DCMAKE_INSTALL_PREFIX=~/rtion/root/root-6.08.06-install/ ~/rtion/root/root-6.08.06/
+cmake --build . --target install [-- -j<nCPU>]
 ```
 
 activate by sourcing the appropriate .sh file
