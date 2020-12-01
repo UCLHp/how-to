@@ -101,8 +101,6 @@ if cmake successful
 ```console
 make (-j<nCPU>)
 
-make test
-
 make install
 ```
 
@@ -134,19 +132,29 @@ Building from source to ensure compatible gcc and other compilers.
 cd ~/rtion/
 mkdir root/
 cd root/
+
 wget -c https://root.cern/download/root_v6.08.06.source.tar.gz
 tar -xzf root_v6.08.06.source.tar.gz
 mv root_v6.08.06.source.tar.gz root-6.08.06/
+
 mkdir root-6.08.06-build/ root-6.08.06-install/
 cd root-6.08.06-build/
-cmake -DCMAKE_INSTALL_PREFIX=~/rtion/root/root-6.08.06-install/ ~/rtion/root/root-6.08.06/
-cmake --build . --target install [-- -j<nCPU>]
+
+cmake ~/rtion/root/root-6.08.06/
+
+make [-- -j<nCPU>]
+
+sudo make install
 ```
+The compilation instructions on the website which included make and install simultaneously failed repeatedly so separated to allow completion.
+
+`make install` requires `sudo` permissions to write to location.<br>
+May be able to avoid this requirement by specifying an `install` directory.
 
 activate by sourcing the appropriate .sh file
 
 ```console
-source ~/rtion/root/bin/thisroot.sh
+source ~/rtion/root/root-6.08.06/bin/thisroot.sh
 ```
 
 also add into .bash_aliases for future useres
@@ -193,8 +201,6 @@ if cmake successful
 
 ```console
 make (-j<nCPU>)
-
-make test
 
 make install
 ```
