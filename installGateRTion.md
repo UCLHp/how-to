@@ -50,18 +50,16 @@ following instructions from:<br>
 
 additional dependencies for geant4 - produce error messages:
 
-> missing: EXPAT_LIBRARY EXPAT_INCLUDE_DIR
+```console
+sudo apt-get install libexpat-dev qt5-default libx11-dev libxmu-dev
+```
 
-> ```console
-> sudo apt-get install libexpat-dev
-> ```
+These are included due to the following error messages received when installing without:
+
+> missing: EXPAT_LIBRARY EXPAT_INCLUDE_DIR
 
 > Qt version "" from NOTFOUND, this code requires Qt 4.x<br>
 > X11 Xmu library and/or headers
-
-> ```console
-> sudo apt-get install qt5-default libx11-dev libxmu-dev
-> ```
 
 obtain geant4.10.03 with patch-03 from:<br>
 <https://geant4.web.cern.ch/support/download_archive>
@@ -119,6 +117,12 @@ install required dependencies as listed at:<br>
 ```console
 sudo apt-get install git dpkg-dev cmake g++ gcc \
 binutils libx11-dev libxpm-dev libxext-dev libxft-dev
+```
+
+`libxft-dev` may not install properly, if so this is because it requires a specific version of libfreetype6.  In this case:
+```console
+sudo apt-get install libfreetype6=2.10.1-2
+sudo apt-get install libxft-dev
 ```
 
 install required version of ROOT from:<br>
