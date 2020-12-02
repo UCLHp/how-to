@@ -92,7 +92,6 @@ cmake \
 -DGEANT4_USE_OPENGL_X11=ON \
 -DGEANT4_USE_QT=ON \
 -DGEANT4_USE_RAYTRACER_X11=ON \
--~/rtion/geant4/geant4.10.03.p03-install/ \
 ~/rtion/geant4/geant4.10.03.p03/
 ```
 
@@ -136,20 +135,30 @@ cd root/
 wget -c https://root.cern/download/root_v6.08.06.source.tar.gz
 tar -xzf root_v6.08.06.source.tar.gz
 mv root_v6.08.06.source.tar.gz root-6.08.06/
+```
 
+```console
 mkdir root-6.08.06-build/ root-6.08.06-install/
 cd root-6.08.06-build/
+```
 
-cmake ~/rtion/root/root-6.08.06/
+```console
+cmake \
+-DCMAKE_INSTALL_PREFIX=~/rtion/root/root-6.08.06-install/ \
+~/rtion/root/root-6.08.06/
+```
 
+As long as cmake is successful,
+
+```console
 make [-- -j<nCPU>]
 
-sudo make install
+make install
 ```
 The compilation instructions on the website which included make and install simultaneously failed repeatedly so separated to allow completion.
 
-`make install` requires `sudo` permissions to write to location.<br>
-May be able to avoid this requirement by specifying an `install` directory.
+<`make install` requires `sudo` permissions to write to location.<br>
+May be able to avoid this requirement by specifying an `install` directory.>
 
 activate by sourcing the appropriate .sh file
 
