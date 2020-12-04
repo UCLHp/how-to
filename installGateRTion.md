@@ -174,16 +174,9 @@ also add into .bash_aliases for future useres
 
 # GATE 8.1 RT-ion
 
+Following instructions from these sources:<br>
 <http://www.opengatecollaboration.org/GateRTion><br>
 <https://github.com/OpenGATE/Gate/tree/GateRTion>
-
-additional dependencies identified during installation - produce error messages:
-
-> something
-
-> ```console
-> fix
-> ```
 
 ```console
 cd ~/rtion/
@@ -228,33 +221,7 @@ also add into .bash_aliases for future useres
 
 ## Issues
 
-When preparing Gate can download testing data however this always seems to cause issues: generate install files with cmake and following options
-
-```console
-cmake \
--DBUILD_TESTING=ON \
--DGATE_DOWNLOAD_BENCHMARKS_DATA=ON \
--DCMAKE_INSTALL_PREFIX=~/rtion/gate/gate-install/ \
-~/rtion/gate/Gate-GateRTion/
-```
-
-Also, below are listed the previous build options used on an older system
-
-```console
-sudo cmake \
--DBUILD_TESTING=OFF \
--DCMAKE_BACKWARDS_COMPATIBILITY=2.4 \
--DCMAKE_BUILD_TYPE=Release \
--DCMAKE_INSTALL_PREFIX=/usr/local/gate/gate_v8.0-install \
--DGATE_DOWNLOAD_BENCHMARKS_DATA=ON \
--DGATE_USE_ECAT7=OFF \
--DGATE_USE_GEANT4_UIVIS=ON \
--DGATE_USE_ITK=ON \
--DGATE_USE_OPTICAL=OFF \
--DGATE_USE_STDC11=ON \
--DGeant4_DIR=/usr/local/geant4/geant4.10.03.p03-install/lib/Geant4-10.3.3 \
-/usr/local/gate/gate_v8.0
-```
+Currently no known issues but only very minimal testing has been performed.
 
 # START HERE.txt
 
