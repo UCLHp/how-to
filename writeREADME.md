@@ -64,7 +64,7 @@ Anything you know doesn't work
 ## Contribute
 
 Pull requests are welcome.<br>
-For major changes, please open a ticket first to discuss desired changes: [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
+For major changes, please open a ticket first to discuss desired changes: [[repo name]/issues](http://github.com/agosling/[repo name]/issues)
 
 If making changes, please check all tests and add if required.
 
