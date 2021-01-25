@@ -1,24 +1,53 @@
 Designed based on guide outlined on [makeareadme.com](https://www.makeareadme.com/) but with some personal additions.
 
----
+--------------------------------------------------------------------------------
 
 # TITLE
 
 Brief description of the package/programme etc.
 
-*BADGES* - can add badges of metadata such as version info  ([shields.io](https://shields.io/) gives many good options).
+_BADGES_ - can add badges of metadata such as version info ([shields.io](https://shields.io/) gives many good options).
 
-### Components
+## Components
 
 If formed of multiple parts, outline file structure
 
 ## Installation
 
-Steps to take to install
+Clone this repo from github:
+
+```console
+git clone https://github.com/UCLHp/[repo name].git
+```
+
+Create an environment in which the code will run (these instructions use the basic python environment builder included with most Python installs). Open a command terminal and type the following:
+
+```console
+cd <path to github repo>/[repo name]
+mkdir env
+python -m <path to github repo>/[repo name]/env/
+```
+
+This creates the environment. Next navigate into the directory `<path to github repo>/[repo name]/env/Scripts` and activate the environment with either `Scripts.bat` on Windows or `<SOMETHING HERE>` on Linux/Mac
+
+Install the required packages as instructed in the **Requirements** section below.
+
+To deactivate the virtual environment, simply type `deactivate`, and to remove the virtual environment delete the folder `env`.
 
 ### Requirements
 
-Any specifics, dependencies, use of PipEnv/requirements files
+The following dependency packages will need to be installed. They are as listed in the `requirements.txt` file within this package.<br>
+To install from `requirements.txt`, within your environment, navigate back to `<path to github repo>/[repo name]` and run the following command:
+
+```python
+python -m pip install -r requirements.txt
+```
+
+`requirements.txt`:
+
+```python
+package==x.xx.x
+```
 
 ### Tests
 
@@ -26,36 +55,7 @@ Included tests, how to use them, what results to expect
 
 ## Usage
 
-Point future python programmes to these files location.  Either add the location
- of these files to your `$PATH` or use the following commands at the start of
- each new python programme (this should be OS independent):
-
-``` python
-from sys import path as sysPath
-from os import path as osPath
-sysPath.append(osPath.join(osPath.expanduser('~'),'[PATH TO THESE PACKAGES]'))
-```
-
-Within the folder for a particular package there should be an `__init__.py`
-file containing lines like the following:
-
-```python
-from <package folder>.<sub directory>...<package fileneame> import <function>
-```
-
-If there is one of these lines for each function in a file, they can then be
-called using the line
-
-```python
-from <package folder> import <function>
-```
-or
-```python
-import <package folder>
-
-foo = <package filename>.<function>
-```
-
+How to use the package.
 
 ## Limitations / Known Bugs
 
@@ -63,8 +63,8 @@ Anything you know doesn't work
 
 ## Contribute
 
-Pull requests are welcome.  
-For major changes, please open a ticket first to discuss desired changes:  [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
+Pull requests are welcome.<br>
+For major changes, please open a ticket first to discuss desired changes: [[repo-name]/issues](http://github.com/agosling/[repo-name]/issues)
 
 If making changes, please check all tests and add if required.
 
@@ -74,7 +74,7 @@ All code within this package distributed under [GNU GPL-3.0 (or higher)](https:/
 
 Full license text contained within the file LICENCE.
 
-###  (C) License for all programmes
+### (C) License for all programmes
 
 ```
 ###  Copyright (C) 2020:  Andrew J. Gosling
@@ -91,5 +91,4 @@ Full license text contained within the file LICENCE.
 
   #  You should have received a copy of the GNU General Public License
   #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 ```
