@@ -12,8 +12,8 @@ Install VirtualBox guest packages to enable things like copy-paste
 > Select `Devices` -> `Install Guest Additions`<br>
 > This will mount the Guest Additions CD<br>
 > Open a terminal, navigate to the CD, then run<br>
-> `sudo ./autorun.sh`<br>
 > `sudo apt-get install virtualbox-guest-additions-iso`<br>
+> `sudo ./VBoxLinuxAdditions.run <br>
 
 Also remember to set things like clipboard to bidirectional in you VBox manager.
 
