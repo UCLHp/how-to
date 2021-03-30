@@ -25,10 +25,17 @@ Create an environment in which the code will run (these instructions use the bas
 ```console
 cd <path to github repo>/[repo name]
 mkdir env
-python -m <path to github repo>/[repo name]/env/
+python -m venv [<path to github repo>/[repo name]/]env
 ```
 
-This creates the environment. Next navigate into the directory `<path to github repo>/[repo name]/env/Scripts` and activate the environment with either `Scripts.bat` on Windows or `<SOMETHING HERE>` on Linux/Mac
+This creates the environment. To activate the environment either use `activate.bat` on Windows or source `activate` on Linux/Mac
+
+```console
+##  Windows
+[<path to github repo>/[repo name]/]env/Scripts/activate.bat
+##  Linux/Mac
+source [<path to github repo>/[repo name]/]env/Scripts/activate
+```
 
 Install the required packages as instructed in the **Requirements** section below.
 
