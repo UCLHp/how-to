@@ -1,0 +1,52 @@
+#  This will create all the folders to store Profile data
+#  Place a copy of this file into a folder for the specific gantry angle of the measurements
+#  Using a bash shell (the Git Bash terminal is a good example),
+#    navigate to the location of this file in the gantry angle folder and run:
+#  source createFolderStructure.txt
+
+
+mkdir RangeShifter_0cm
+mkdir RangeShifter_2cm
+mkdir RangeShifter_3cm
+mkdir RangeShifter_5cm
+
+cd RangeShifter_0cm
+mkdir Distance_m40cm
+mkdir Distance_m20cm
+mkdir Distance_m10cm
+mkdir Distance_is0cm
+mkdir Distance_p10cm
+mkdir Distance_p20cm
+mkdir Distance_p40cm
+cd ../
+
+cd RangeShifter_2cm
+mkdir Distance_m40cm
+mkdir Distance_m20cm
+mkdir Distance_m10cm
+mkdir Distance_is0cm
+mkdir Distance_p10cm
+mkdir Distance_p20cm
+mkdir Distance_p40cm
+cd ../
+
+cd RangeShifter_3cm
+mkdir Distance_m40cm
+mkdir Distance_m20cm
+mkdir Distance_m10cm
+mkdir Distance_is0cm
+mkdir Distance_p10cm
+mkdir Distance_p20cm
+mkdir Distance_p40cm
+cd ../
+
+cd RangeShifter_5cm
+mkdir Distance_m40cm
+mkdir Distance_m20cm
+mkdir Distance_m10cm
+mkdir Distance_is0cm
+mkdir Distance_p10cm
+mkdir Distance_p20cm
+mkdir Distance_p40cm
+cd ../
+
