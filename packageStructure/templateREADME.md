@@ -20,15 +20,22 @@ Clone this repo from github:
 git clone https://github.com/UCLHp/[repo name].git
 ```
 
-Create an environment in which the code will run (these instructions use the basic python environment builder included with most Python installs). Open a command terminal and type the following:
+Create an environment in which the code will run (these instructions use the basic python environment builder included with most Python installs). Open a command terminal and type the following  (you can exclude the parts in `[ ]` for directory paths if you are in the repo directory):
 
 ```console
 cd <path to github repo>/[repo name]
 mkdir env
-python -m <path to github repo>/[repo name]/env/
+python -m [<path to github repo>/[repo name]/]env/
 ```
 
-This creates the environment. Next navigate into the directory `<path to github repo>/[repo name]/env/Scripts` and activate the environment with either `Scripts.bat` on Windows or `<SOMETHING HERE>` on Linux/Mac
+This creates the environment. To activate the environment either use `activate.bat` on Windows or source `activate` on Linux/Mac
+
+```console
+##  Windows
+[<path to github repo>/TPSprepare/]env/Scripts/activate.bat
+##  Linux/Mac
+source [<path to github repo>/TPSprepare/]env/Scripts/activate
+```
 
 Install the required packages as instructed in the **Requirements** section below.
 
