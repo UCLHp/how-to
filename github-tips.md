@@ -121,6 +121,8 @@ remove a remote branch:
 
 N.B. The UCLH proxy address is http://[uclh_username]:[uclh_pwd]@www-cache-n:3128
 
+To determine the IP address for the proxy, you can ping www-cache-n and use that explicitly as sometimes the DNS doesn't convert the address when using this as a workaround.
+
 ##### Tracking Changes
 > git add [filename]  
 > git commit -m "Reason for change"
