@@ -20,6 +20,10 @@ git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<
 ```
 https://www.freecodecamp.org/forum/t/git-behind-a-proxy-server/13187
 
+N.B. The UCLH proxy address is http://[uclh_username]:[uclh_pwd]@www-cache-n:3128
+
+To determine the IP address for the proxy, you can ping www-cache-n and use that explicitly as sometimes the DNS doesn't convert the address when using this as a workaround.
+
 
 
 
